@@ -1,4 +1,4 @@
-# Binary Search Tree inversion using unique_ptr
+# Binary and N Search Tree inversion using unique_ptr
 
-* Recursive solution
-* Iterative solution using stack
+* Recursive solution (Binary Tree)
+* Iterative solution using stack (Binary, N-Tree )
