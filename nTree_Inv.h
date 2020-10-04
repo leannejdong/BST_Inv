@@ -57,7 +57,7 @@ void nonRecursiveTraversal(nTree *root, ostream &stream)
     }
 }
 
-void invertnTree(nTree *root)
+void PrintInvnTree(nTree *root)
 {
     if (root == nullptr)
     {
@@ -88,4 +88,4 @@ void invertnTree(nTree *root)
         cout << endl;
     }
 }
-#endif //BST_INV_NTREE_INV_H
+#endif

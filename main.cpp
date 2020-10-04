@@ -53,7 +53,7 @@ int main() {
 
     cout << "Level order traversal Before Mirroring\n";
 
-    invertnTree(root);
+    PrintInvnTree(root);
 
     ostringstream stream;
     nonRecursiveTraversal(root, stream);
