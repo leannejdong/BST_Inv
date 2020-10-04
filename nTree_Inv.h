@@ -8,6 +8,7 @@
 #include <stack>
 #include <memory>
 #include <vector>
+#include <sstream>
 
 using namespace std;
 using std::vector;
@@ -27,7 +28,7 @@ unique_ptr<nTree>newNode(int v)
 
 // The non-recursive pre-order traversal can be implemented using a stack
 // Function to perform preorder traversal of the ntree
-void nonRecursiveTraversal(nTree *root)
+void nonRecursiveTraversal(nTree *root, ostream &stream)
 {
     std::stack<nTree *> s;
 
@@ -43,7 +44,7 @@ void nonRecursiveTraversal(nTree *root)
         // current node has been traversed
         if(curr != nullptr)
         {
-            cout << curr-> v_ << " ";
+            stream << curr-> v_ << " ";
         }
         // store all childrent of current node from right to left
         vector<unique_ptr<nTree>>::iterator it = curr->child.end();

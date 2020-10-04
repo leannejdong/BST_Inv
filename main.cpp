@@ -2,6 +2,7 @@
 #include "bst_iter.h"
 #include "nTree_Inv.h"
 #include <iostream>
+//#include <cassert>
 
 int main() {
     /* Construct below tree
@@ -54,8 +55,10 @@ int main() {
 
     invertnTree(root);
 
-    nonRecursiveTraversal(root);
-
-
+    ostringstream stream;
+    nonRecursiveTraversal(root, stream);
+//    string output = stream.str();
+//    string expected_output = "10 2 77 88 34 56 1 100 7 8 9 ";
+//    assert(output == expected_output);
 
 }
